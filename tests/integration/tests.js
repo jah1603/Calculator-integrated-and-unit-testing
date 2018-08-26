@@ -57,17 +57,17 @@ it('it should give expected output for a range of numbers__very_large', function
   element(by.css('#operator_multiply')).click();
   expect(running_total.getAttribute('value')).to.eventually.equal('7.958661109946401e+24')
 })
-//
-//
-//   it('it should give expected output for a range of numbers__Negative', function(){
-//     running_total = element(by.css('#running_total'))
-//     element(by.css('#number9')).click();
-//     element(by.css('#operator_subtract')).click();
-//     element(by.css('#number9')).click();
-//     element(by.css('#number9')).click();
-//     element(by.css('#operator_equals')).click();
-//     expect(running_total.getAttribute('value')).to.eventually.equal('-90')
-//   })
+
+
+  it('it should give expected output for a range of numbers__Negative', function(){
+    running_total = element(by.css('#running_total'))
+    element(by.css('#number6')).click();
+    element(by.css('#operator_subtract')).click();
+    element(by.css('#number2')).click();
+    element(by.css('#number4')).click();
+    element(by.css('#operator_equals')).click();
+    expect(running_total.getAttribute('value')).to.eventually.equal('-18')
+  })
 //
 //   it('it should give expected output for a range of numbers__decimals', function(){
 //     running_total = element(by.css('#running_total'))
