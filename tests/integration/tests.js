@@ -34,17 +34,17 @@ it('it should display the result of the operation upon click', function(){
   element(by.css('#operator_equals')).click();
   expect(running_total.getAttribute('value')).to.eventually.equal('26')
 });
-//
-// it('it should allow for multiple operations to be chaned together', function(){
-//   running_total = element(by.css('#running_total'))
-//   element(by.css('#number8')).click();
-//   element(by.css('#operator_add')).click();
-//   element(by.css('#operator_add')).click();
-//   element(by.css('#operator_add')).click();
-//   element(by.css('#operator_add')).click();
-//   element(by.css('#operator_equals')).click();
-//   expect(running_total.getAttribute('value')).to.eventually.equal('128')
-// });
+
+it('it should let the user chain operations', function(){
+  running_total = element(by.css('#running_total'))
+  element(by.css('#number6')).click();
+  element(by.css('#operator_add')).click();
+  element(by.css('#operator_add')).click();
+  element(by.css('#operator_add')).click();
+  element(by.css('#operator_add')).click();
+  element(by.css('#operator_equals')).click();
+  expect(running_total.getAttribute('value')).to.eventually.equal('96')
+});
 //
 // it('it should give expected output for a range of numbers__Very_Large', function(){
 //   running_total = element(by.css('#running_total'))
