@@ -36,10 +36,10 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 2);
   })
 
-  it('it should concatenate multiple number button clicks', function(){
-    calculator.numberClick(1);
+  it('it should be able to produce a concatenated number in response to sequential button presses', function(){
+    calculator.numberClick(4);
     calculator.numberClick(3);
-    assert.strictEqual(calculator.runningTotal, 13);
+    assert.strictEqual(calculator.runningTotal, 43);
 
   })
 
