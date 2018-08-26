@@ -23,10 +23,10 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 6);
   })
 
-  it('it should multiply 3 by 5 and get 15', function(){
-    calculator.previousTotal = 3;
-    calculator.multiply(5)
-    assert.strictEqual(calculator.runningTotal, 15);
+  it('it should respond with 63 when the user multiplies 7 and 9 together', function(){
+    calculator.previousTotal = 7;
+    calculator.multiply(9)
+    assert.strictEqual(calculator.runningTotal, 63);
 
   })
 
