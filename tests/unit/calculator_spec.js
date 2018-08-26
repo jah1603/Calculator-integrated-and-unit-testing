@@ -43,12 +43,13 @@ describe('calculator', function () {
 
   })
 
-  it('it should chain multiple operations together', function(){
-    calculator.runningTotal = 2;
+  it('it should be able to chain multiple operations', function(){
+    calculator.runningTotal = 3;
     calculator.operatorClick('+');
     calculator.operatorClick('+');
     calculator.operatorClick('+');
-    assert.strictEqual(calculator.runningTotal, 8);
+    calculator.operatorClick('+');
+    assert.strictEqual(calculator.runningTotal, 24);
 
 })
 
