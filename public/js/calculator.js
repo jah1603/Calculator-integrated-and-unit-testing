@@ -23,7 +23,7 @@ Calculator.prototype = {
     if (number === 0){
     this.runningTotal = NaN;
   }
-  else{
+  else {
     this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
   }
   },
