@@ -17,10 +17,10 @@ describe('calculator', function () {
     assert.strictEqual(calculator.runningTotal, 8 );
   })
 
-  it('it should subtract 4 from 7 and get 3', function(){
-    calculator.previousTotal = 7;
-    calculator.subtract(4);
-    assert.strictEqual(calculator.runningTotal, 3);
+  it('it should respond with 6 when the user subtracts 9 from 15', function(){
+    calculator.previousTotal = 15;
+    calculator.subtract(9);
+    assert.strictEqual(calculator.runningTotal, 6);
   })
 
   it('it should multiply 3 by 5 and get 15', function(){
