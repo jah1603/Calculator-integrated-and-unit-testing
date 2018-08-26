@@ -45,18 +45,18 @@ it('it should let the user chain operations', function(){
   element(by.css('#operator_equals')).click();
   expect(running_total.getAttribute('value')).to.eventually.equal('96')
 });
-//
-// it('it should give expected output for a range of numbers__Very_Large', function(){
-//   running_total = element(by.css('#running_total'))
-//   element(by.css('#number9')).click();
-//   element(by.css('#operator_multiply')).click();
-//   element(by.css('#operator_multiply')).click();
-//   element(by.css('#operator_multiply')).click();
-//   element(by.css('#operator_multiply')).click();
-//   element(by.css('#operator_multiply')).click();
-//   element(by.css('#operator_multiply')).click();
-//   expect(running_total.getAttribute('value')).to.eventually.equal('3.4336838202925124e+30')
-// })
+
+it('it should give expected output for a range of numbers__very_large', function(){
+  running_total = element(by.css('#running_total'))
+  element(by.css('#number6')).click();
+  element(by.css('#operator_multiply')).click();
+  element(by.css('#operator_multiply')).click();
+  element(by.css('#operator_multiply')).click();
+  element(by.css('#operator_multiply')).click();
+  element(by.css('#operator_multiply')).click();
+  element(by.css('#operator_multiply')).click();
+  expect(running_total.getAttribute('value')).to.eventually.equal('7.958661109946401e+24')
+})
 //
 //
 //   it('it should give expected output for a range of numbers__Negative', function(){
