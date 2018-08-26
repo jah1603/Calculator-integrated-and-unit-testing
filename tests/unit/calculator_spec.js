@@ -30,10 +30,10 @@ describe('calculator', function () {
 
   })
 
-  it('it should divide 21 by 7 and get 3', function(){
-    calculator.previousTotal = 21;
-    calculator.divide(7)
-    assert.strictEqual(calculator.runningTotal, 3);
+  it('it should respond with 2 when the user divides 84 by 42', function(){
+    calculator.previousTotal = 84;
+    calculator.divide(42)
+    assert.strictEqual(calculator.runningTotal, 2);
   })
 
   it('it should concatenate multiple number button clicks', function(){
